@@ -99,6 +99,8 @@ public class RidesAndFaresExercise {
     public static class EnrichmentFunction
             extends RichCoFlatMapFunction<TaxiRide, TaxiFare, RideAndFare> {
 
+        private static final long serialVersionUID = 5684692089084881636L;
+
         @Override
         public void open(Configuration config) throws Exception {
             throw new MissingSolutionException();
